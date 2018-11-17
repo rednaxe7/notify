@@ -12,5 +12,9 @@ export class AppComponent {
  title = 'notify';
  
  constructor(public notify: NotificationService) {}
+
+ showSuccess() {
+ 	this.notify.showSuccess('Hello world!', 'Toastr fun!');
+  }
  
 }

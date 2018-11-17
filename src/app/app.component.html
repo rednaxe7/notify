@@ -7,8 +7,13 @@
 </div>
 
 <div style="text-align:center">
-	<button (click)="notify.showSuccess('Mensaje de Prueba exitoso','Good')">Show Success</button>
-	<button (click)="notify.showError('Mensaje de Error','Bad')">Show Error</button>
+	<!-- p>
+		{{/*this.showSuccess()*/ }}
+	</p -->
+	<input type="text" id="message" #message><br>
+	<button (click)="notify.showSuccess(message.value,'Good')">Show Success</button>
+	<button (click)="notify.showError(message.value,'Bad')">Show Error</button>
+	<!--button (click)="this.showSuccess()">toastr</button-->
 </div>
 
 
